@@ -168,8 +168,6 @@ const generateResetToken = async (req, res) => {
 const resetPassword = async (req, res) => {
     try {
         const { token, newPassword } = req.body;
-        console.log("Received token:", token); // Verifica si el token es recibido
-        console.log("New password:", newPassword); // Verifica la nueva contraseña
 
         // Verificar si el token es válido
         const decoded = jwt.verify(token, process.env.JWT_SECRET); // Verifica el token

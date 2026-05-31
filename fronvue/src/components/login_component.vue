@@ -23,8 +23,8 @@ import apiClient from '../services/ApiService';
 export default {
   data() {
     return {
-      email: 'salinasgomez16@gmail.com',
-      password: 'BrandonGomez12345***',
+      email: '',
+      password: '',
       // codigo: '',
     };
   },
